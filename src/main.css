@@ -9,7 +9,7 @@
 
         --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 
-        --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
+        --business-glow: 0px 0px 4px rgba(16, 26, 41, 0.75);
         --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
     }
 
@@ -174,8 +174,11 @@
         opacity: 0.75;
     }
 
+    .todo-list{
+        margin-top: -2rem;
+    }
     .todo-list .list {
-        margin: 1rem 0;
+        margin: 2rem 0;
     } 
 
     .todo-list .todo-item {

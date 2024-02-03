@@ -71,20 +71,21 @@ onMounted(() => {
 
 		<section class="todo-list">
 			<h3>TODO LIST</h3>
-      <p>Click to mark completed</p>
+      		<p>Click to mark completed</p>
+			<p>Todo items can be edited by simpling clicking the texts</p>
 			<div class="list" id="todo-list">
 
 				<div v-for="todo in todos_asc" :class="`todo-item ${todo.done && 'done'}`">
 					<label>
 						<input type="checkbox" v-model="todo.done" />
-            <span :class="`bubble business`"></span>
+            			<span :class="`bubble business`"></span>
 					</label>
 
 					<div class="todo-content">
 						<input type="text" v-model="todo.content" />
 					</div>
 
-					<div class="actions">
+					<div class="actions">	
 						<button class="delete" @click="removeTodo(todo)">Delete</button>
 					</div>
 				</div>
